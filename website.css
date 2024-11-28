@@ -1,0 +1,419 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', 'Arial Black', 'Impact', 'Trebuchet MS', 'sans-serif';
+}
+
+
+@media screen and (max-width: 100%) {
+    body {
+        width: 100%;
+    }
+}
+
+
+body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+
+div p:not(.about-content p, .comment, .hero, .product-card) {
+    position: relative;
+    top: 100px;
+    left: 600px;
+}
+
+
+header {
+    background-color: #fe0000;
+    color: white;
+    padding-left: 120px;
+    text-align: left;
+}
+
+
+nav h1 {
+    position: relative;
+    right: 1000px;
+    top: 3px;
+    font-size: 40px;
+}
+
+
+header img {
+    margin-top: 10px;
+    margin-left: -110px;
+    margin-bottom: -95px;
+    position: relative;
+    z-index: 1;
+    width: 140px;
+    height: 120px;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+nav ul {
+    background-color: #A8A196;
+    width: 1600px;
+    height: 70px;
+    margin-top: 30px;
+    list-style-type: none;
+    text-align: right;
+    position: relative;
+    top: -40px;
+    right: -110px;
+    border-radius: 5px;
+}
+
+
+.underline {
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+
+.underline:hover {
+    border-color: rgb(255, 255, 255);
+}
+
+
+nav ul li {
+    display: inline-flex;
+    margin: 0 15px;
+    position: relative;
+    top: -40px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+main {
+    padding: 20px;
+}
+
+
+.foot2 {
+    text-align: center;
+    margin-top: 5px;
+    background: #333;
+    color: white;
+}
+
+
+.footer-image {
+    width: 100%;
+    height: 300px;
+    top: 16px;
+    position: relative;
+    z-index: 1;
+    margin-top: 410px;
+}
+
+/*added for about*/
+.about-content img {
+    position: relative;
+    top: 50px;
+    left: 760px;
+    width: 350px;
+    height: 300px;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5);
+}
+
+
+.about-content p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+.footer {
+    overflow: hidden;
+    background-color: #fe0000;
+    margin-top: 200px;
+    margin-bottom: -225px;
+    border-radius: 5px;
+}
+
+
+.column {
+    float: left;
+    width: 31%;
+    margin: 20px 1.15%;
+    height: 160px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+
+.avatar {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 40px;
+    background-color: #fed6d6;
+}
+
+
+.username {
+    position: relative;
+    left: 2px;
+    margin-top: 5px;
+    margin-bottom: -15px;
+}
+
+
+.comment {
+    position: relative;
+    top: 10px;
+    margin: 10px;
+    overflow: hidden;
+    min-width: 10px;
+}
+
+
+/*added for services*/
+
+
+.hero {
+    background-color: #e9ecef;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+.hero h1 {
+    font-size: 25;
+    position: relative;
+    top: -20px;
+}
+
+
+.hero p {
+    font-size: 15px;
+    position: relative;
+    top: -20px;
+}
+
+
+.btn {
+    position: relative;
+    top: -6px;
+    background-color: #fe0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.hero .btn {
+    top: 10px;
+}
+
+
+.product-section {
+    padding: 20px;
+    margin-bottom: -400px;
+}
+
+
+#products p:not(.price){
+    position: relative;
+    top: 10px;
+    left: -1px;
+}
+
+
+#products .price {
+    position: relative;
+    top: 60px;
+    left: 0px;
+}
+
+
+.product-section h2 {
+    text-align: center;
+}
+
+
+.product-grid {
+    display: grid;
+    align-items: center;
+    gap: 60px;
+    height: 1000px;
+    width: 800px;
+}
+
+
+.product-card {
+    position: relative;
+    top: 20px;
+    left: 500px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    min-height: 10px;
+    border: solid 2px #fe0000;
+}
+
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+
+.product-card img {
+    max-width: 400px;
+    height: 250px;
+    border-radius: 5px;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5);
+}
+
+
+#product2{
+    width: 500px;
+}
+
+
+.price {
+    font-weight: bold;
+    color: #fe0000;
+}
+
+
+.product-card h3 {
+    position: relative;
+    top: 10px;
+}
+
+
+/*added for contacts */
+
+
+.map-container {
+    position: relative;
+    left: 10px;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    margin-bottom: -860px;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+
+.contacts {
+    position: relative;
+    left: 900px;
+    top: 360px;
+    font-size: 25px;
+}
+
+
+.links {
+    position: relative;
+    top: 370px;
+    left: 900px;
+}
+
+
+#links p {
+    position: relative;
+    top: -70px;
+    left: 100px;
+}
+
+
+.facebook {
+    position: relative;
+    left: 5px;
+}
+
+
+.facebook a {
+    text-decoration: none;
+    color: #fe0000;
+}
+
+
+.facebook a:hover {
+    color: #fe0000;
+    display: flex;
+    border-bottom: 2px solid transparent;
+    transition: 5s ease;
+}
+
+
+.yahoo {
+    position: relative;
+    left: 10px;
+}
+
+
+.yahoo a {
+    text-decoration: none;
+    color: #fe0000;
+}
+
+
+.yahoo a:hover {
+    color: #fe0000;
+    display: flex;
+    border-bottom: 2px solid transparent;
+    transition: 5s ease;
+}
+
+
+.phone {
+    position: relative;
+    left: 10px;
+}
+
+
+.phone a {
+    text-decoration: none;
+    color: #fe0000;
+}
+
+
+.phone a:hover {
+    color: #fe0000;
+    display: flex;
+    border-bottom: 2px solid transparent;
+    transition: 5s ease;
+}
+
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
